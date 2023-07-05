@@ -1,5 +1,5 @@
 
-# Approche proposée pour la gestion de l'état dans les modèles GPT utilisés pour les chatbots
+# Approche proposée pour la gestion d'état dans les modèles GPT utilisés pour les chatbots
 ### Ou comment créer JARVIS
 
 ## Problématique
