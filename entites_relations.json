@@ -1,0 +1,146 @@
+{
+    "entities": [
+        {
+            "labels": [
+                "User",
+                "Person",
+                "Student",
+                "Fullstack Developer"
+            ],
+            "data": {
+                "id": "9Gz4f5E7dZ",
+                "name": "Hamza Alaoui",
+                "occupation": [
+                    "Student",
+                    "Fullstack Developer"
+                ],
+                "educational_institution": "ENSA Kenitra",
+                "graduation_year": "Next Year"
+            }
+        },
+            {
+                "labels": [
+                    "Educational Institution"
+                ],
+                "data": {
+                    "id": "7Hn4R5t9Fz",
+                    "name": "ENSA Kenitra"
+                }
+            },
+            {
+                "labels": [
+                    "Location"
+                ],
+                "data": {
+                    "id": "5Fg2D1u7Jz",
+                    "name": "Kenitra"
+                }
+            },
+            {
+                "labels": [
+                    "Location"
+                ],
+                "data": {
+                    "id": "6Ki8C3v4Lz",
+                    "name": "Casa"
+                }
+            },
+            {
+                "labels": [
+                    "Date"
+                ],
+                "data": {
+                    "id": "4Yj2B1q5Mz",
+                    "name": "5/7/2023"
+                }
+            },
+            {
+                "labels": [
+                    "Organization"
+                ],
+                "data": {
+                    "id": "1Oz7G2p4Nz",
+                    "name": "Nemo Technologies"
+                }
+            },
+            {
+                "labels": [
+                    "Project"
+                ],
+                "data": {
+                    "id": "2Xa5G9s8Uz",
+                    "name": "audioGTP"
+                }
+            },
+            {
+                "labels": [
+                    "Person"
+                ],
+                "data": {
+                    "id": "3Ic8G1r5Tz",
+                    "name": "Kamil"
+                }
+            },
+            {
+                "labels": [
+                    "Time"
+                ],
+                "data": {
+                    "id": "2Lb6V4y8Rz",
+                    "name": "15:30"
+                }
+            }
+    ],
+    "relationships": [
+        {
+            "entity_id": "9Gz4f5E7dZ",
+            "relationship": "studying_at",
+            "object_id": "7Hn4R5t9Fz"
+        },
+        {
+            "entity_id": "9Gz4f5E7dZ",
+            "relationship": "located_in",
+            "object_id": "5Fg2D1u7Jz"
+        },
+        {
+            "entity_id": "9Gz4f5E7dZ",
+            "relationship": "travelling_to",
+            "object_id": "6Ki8C3v4Lz"
+        },
+        {
+            "entity_id": "6Ki8C3v4Lz",
+            "relationship": "travel_date",
+            "object_id": "4Yj2B1q5Mz"
+        },
+        {
+            "entity_id": "9Gz4f5E7dZ",
+            "relationship": "internship_at",
+            "object_id": "1Oz7G2p4Nz"
+        },
+        {
+            "entity_id": "1Oz7G2p4Nz",
+            "relationship": "located_in",
+            "object_id": "6Ki8C3v4Lz"
+        },
+        {
+            "entity_id": "9Gz4f5E7dZ",
+            "relationship": "working_on",
+            "object_id": "2Xa5G9s8Uz"
+        },
+        {
+            "entity_id": "9Gz4f5E7dZ",
+            "relationship": "meeting_with",
+            "object_id": "3Ic8G1r5Tz"
+        },
+        {
+            "entity_id": "3Ic8G1r5Tz",
+            "relationship": "meeting_time",
+            "object_id": "2Lb6V4y8Rz"
+        },
+        {
+            "entity_id": "3Ic8G1r5Tz",
+            "relationship": "meeting_date",
+            "object_id": "4Yj2B1q5Mz"
+        }
+    ]
+}

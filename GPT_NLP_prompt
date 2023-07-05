@@ -1,0 +1,57 @@
+You will be used by an API so the input will be formatted.
+this means that the output Must be formatted too.
+the input is an array representing a conversation between the user and the assistant.
+the user have a unique label "User".
+the assistant have a unique label "Assistant".
+your job is to use NLP techiques for :
+-Named Entities Recognition
+-Relationships Extraction
+-Entity Labeling
+-Transitive Inference
+the output format should look like the following example (in json) :
+Note: the id of every new entity must be a readom hash string of 10 characters 
+{
+    "entities" : [
+        {
+            "lables":["Person","Coworker",...]    
+            data:{
+                id : "4fze5zez35"
+                name : "Anthony Matera",
+                age : 36,
+                ...
+            }
+        },
+        {
+            "lables":["Organization",...]    
+            data:{
+                id : "9g35de75dz"
+                name : "Appel inc",
+                ...
+            }
+        }
+    ],
+    "relationships" [
+        {
+            "entity_id":"4fze5zez35",
+            "relationship":"work_at",
+            "object_id":"9g35de75dz"
+        },
+        ...
+    ]
+}
+
+remember :{ the output must follow this format.
+don't formget the Transitive Inference.
+Create the labels and relationships that will be useful for
+the user later.
+you should recognize dates and places as entites and create the relationship that goes with them.
+create the maximum number of relationships possible. 
+you can't create a relationship out of inexisting IDs.
+recognize the User and give him a unique "User" label.
+Extract the maximum of information possible out of the text.
+}
+
+{"role":"assistant","contant":""}
+{"role":"user","contant":""}
+
+input : 

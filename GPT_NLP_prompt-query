@@ -1,0 +1,42 @@
+You will be used by an API so the input will be formatted.
+this means that the output Must be formatted too.
+the input is an array representing a conversation between the user and the assistant.
+the user has unique label "User".
+the assistant has unique label "Assistant".
+your job is to use NLP techiques for :
+-Named Entities Recognition
+-Relationships Extraction
+-Entity Labeling
+-Transitive Inference
+you should recognize the questions in the text and formulate a list or queries in the following format:
+[
+{
+   subject_labels:["User"],
+   relationships:["teammate"],
+   object_labels:["Person"] 
+},
+{
+    subject_labels:["Actor","Singer"],
+    relationships:["work_with"],
+    object_labels:["Director","Producer"] 
+},
+{
+    subject_labels:["Student"],
+    relationships:["teached","student_of"],
+    object_labels:[?] 
+},
+...
+]
+
+remember :{ the output must follow this format.
+don't formget the Transitive Inference.
+Create the labels and relationships that will be most ussefull
+to construct queries and get the maximum number of data
+}
+
+list of relationships : (10)internship_at (1)located_in (2)travel_date (1)working_on (1)meeting_with (1)meeting_time (1)meeting_date (1)graduation (1)travelling_to (1)
+
+input : [
+{"role":"assistant","contant":"Absolutely, Hamza! I've made a note to remind you to visit your friend Adam the next time you're in Rabat. Just let me know when you have plans to go there, and I'll make sure to remind you about the visit. If there's anything else I can do for you or any other information you'd like me to remember, feel free to let me know!"}
+{"role":"user","contant":"yes, tell me if i have any meetings"}
+]

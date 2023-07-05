@@ -1,0 +1,15 @@
+MATCH (user:User )-[:friend]->(person:Person)
+RETURN person;
+
+MATCH (user:User )-[:travelling_to]->(city:City)
+RETURN city;
+
+MATCH (user:User )-[:meeting_with]->(person:Person)
+RETURN person;
+
+MATCH (user:User )-[:meeting_time]->(time:Time)
+RETURN time;
+
+MATCH (user:User )-[:meeting_date]->(date:Date)
+RETURN date;
+
